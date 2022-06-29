@@ -1,0 +1,17 @@
+.footer {
+  width: 100vw;
+  background-color: black;
+  
+  .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .socials {
+    width: 100%;
+    text-align: right;
+  }
+}
