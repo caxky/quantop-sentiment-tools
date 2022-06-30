@@ -7,6 +7,11 @@
 
   .home-banner {
     text-align: center;
+
+    .home-banner-logo img {
+      height: 30vw;
+      max-height: 200px;
+    }
   }
 
   .sections {

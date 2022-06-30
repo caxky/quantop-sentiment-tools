@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <div className='home'>
       <div className='home-banner'>
-        <img src='/images/logo.png' alt='logo' />
+        <div className='home-banner-logo'>
+          <img src='/images/logo.svg' alt='logo' />
+        </div>
         <h1>Sentiment Analysis Tools</h1>
       </div>
 
