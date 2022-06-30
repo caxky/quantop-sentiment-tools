@@ -1,5 +1,9 @@
 import './App.scss';
-import { Row, Col } from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 import Navigation from './components/navbar/Navigation.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Home from './components/home/Home.jsx';
@@ -10,20 +14,25 @@ import Dashboard from './components/dashboard/Dashboard.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <Row>
-        <Col sm={12}>
-          <Navigation />
-        </Col>
-        <Col sm={12}>
-          <Dashboard
+    <Router>
+    <div className="App">      
+      <Navigation/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/stocks' element={<Dashboard
             title="Stocks"
             labels={['MSFT', 'APPL', 'GOOG', 'AMZN', 'PLTR', 'ZOOM', 'FB', 'TWTR', 'YHOO', 'NVDA']}
-          />
-        </Col>
-      </Row>
-      <Footer />
+          />}/>
+          <Route path='/crypto' element={<Dashboard
+            title="Cryptocurrency"
+            labels={['BTC', 'ETH', 'SOL', 'DOGE', 'ADA', 'AVAX', 'BNB', 'XRP', 'DOT', 'MATIC']}
+          />}/>
+          <Route path='/learn' element={<Learn/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      <Footer/>
     </div>
+    </Router>
   );
 }
 

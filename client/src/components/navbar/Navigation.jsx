@@ -13,7 +13,7 @@ export default function Navigation() {
       <Navbar className='navbar' variant="dark">
         <Navbar.Brand className='navbar-banner'>
           <div className='navbar-logo'>
-          <Nav.Link className="nav-link" href="#">
+          <Nav.Link className="nav-link" href="/">
             <img src='/images/logo.svg' alt='logo' />
           </Nav.Link>
           </div>
@@ -23,7 +23,7 @@ export default function Navigation() {
         </Navbar.Brand>
 
         <Nav className="navbar-nav">
-          <Nav.Link className="nav-link" href="#">
+          <Nav.Link className="nav-link" href="/">
             <HomeIcon />
             Home
           </Nav.Link>
@@ -34,10 +34,10 @@ export default function Navigation() {
                 Stocks
               </span> 
             } className="basic-nav-dropdown">
-            <NavDropdown.Item href="#">Overall</NavDropdown.Item>
-            <NavDropdown.Item href="#">News</NavDropdown.Item>
-            <NavDropdown.Item href="#">Reddit</NavDropdown.Item>
-            <NavDropdown.Item href="#">Twitter</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks">Overall</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks">News</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks">Reddit</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks">Twitter</NavDropdown.Item>
           </NavDropdown>
           
 
@@ -47,18 +47,18 @@ export default function Navigation() {
                 Crypto
               </span> 
             } className="basic-nav-dropdown">
-            <NavDropdown.Item href="#">Overall</NavDropdown.Item>
-            <NavDropdown.Item href="#">News</NavDropdown.Item>
-            <NavDropdown.Item href="#">Reddit</NavDropdown.Item>
-            <NavDropdown.Item href="#">Twitter</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto">Overall</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto">News</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto">Reddit</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto">Twitter</NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link className="nav-link" href="#">
+          <Nav.Link className="nav-link" href="/learn">
             <MenuBookIcon />
             Learn
           </Nav.Link>
 
-          <Nav.Link className="nav-link" href="#">
+          <Nav.Link className="nav-link" href="/contact">
             <MailIcon />
             Contact
           </Nav.Link>
