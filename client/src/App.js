@@ -17,19 +17,21 @@ function App() {
     <Router>
     <div className="App">      
       <Navigation/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/stocks' element={<Dashboard
-            title="Stocks"
-            labels={['MSFT', 'APPL', 'GOOG', 'AMZN', 'PLTR', 'ZOOM', 'FB', 'TWTR', 'YHOO', 'NVDA']}
-          />}/>
-          <Route path='/crypto' element={<Dashboard
-            title="Cryptocurrency"
-            labels={['BTC', 'ETH', 'SOL', 'DOGE', 'ADA', 'AVAX', 'BNB', 'XRP', 'DOT', 'MATIC']}
-          />}/>
-          <Route path='/learn' element={<Learn/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-        </Routes>
+        <div className='wrapper'>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/stocks' element={<Dashboard
+              title="Stocks"
+              labels={['MSFT', 'APPL', 'GOOG', 'AMZN', 'PLTR', 'ZOOM', 'FB', 'TWTR', 'YHOO', 'NVDA']}
+            />}/>
+            <Route path='/crypto' element={<Dashboard
+              title="Cryptocurrency"
+              labels={['BTC', 'ETH', 'SOL', 'DOGE', 'ADA', 'AVAX', 'BNB', 'XRP', 'DOT', 'MATIC']}
+            />}/>
+            <Route path='/learn' element={<Learn/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+          </Routes>
+        </div>
       <Footer/>
     </div>
     </Router>
