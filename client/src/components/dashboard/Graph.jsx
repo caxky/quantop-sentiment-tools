@@ -5,7 +5,7 @@ import { Chart } from 'primereact/chart';
 export default function Table(props) {
 
   const [graphData] = useState({
-    labels: ['MSFT', 'APPL', 'GOOG', 'AMZN', 'PLTR', 'ZOOM', 'FB', 'TWTR', 'YHOO', 'NVDA'],
+    labels: props.labels,
     datasets: [
       {
         label: props.label,
