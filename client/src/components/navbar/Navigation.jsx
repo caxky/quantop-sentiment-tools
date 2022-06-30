@@ -1,6 +1,10 @@
 import React from 'react';
+import { useState } from 'react';
 import './Navigation.scss';
 import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+import { IconButton } from '@mui/material';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HomeIcon from '@mui/icons-material/Home';
 import TimelineIcon from '@mui/icons-material/Timeline';
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
@@ -8,9 +12,13 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import MailIcon from '@mui/icons-material/Mail';
 
 export default function Navigation() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!isMenuOpen);
+
   return (
     <>
-      <Navbar className='navbar' variant="dark">
+      <Navbar className={`navbar${isMenuOpen === true ? ' open' : ''}`} variant="dark">
         <Navbar.Brand className='navbar-banner'>
           <div className='navbar-logo'>
           <Nav.Link className="nav-link" href="/">
@@ -64,6 +72,16 @@ export default function Navigation() {
           </Nav.Link>
         </Nav>
       </Navbar>
+      <div className={`navbar-button${isMenuOpen === true ? ' open' : ''}`}>
+        <IconButton type="button" className="button small" onClick={toggleMenu}>
+          {
+            (isMenuOpen === true) 
+            ? <ChevronRightIcon fontSize='large'/> 
+            : <ChevronLeftIcon fontSize='large'/>
+          }
+        </IconButton>
+      </div>
+      
     </>
   )
 }
