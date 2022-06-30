@@ -22,11 +22,13 @@
 
       .section-content {
         display: flex;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
 
         img {
-          margin: 12px 12px 12px auto;
-          width: 30%;
           height: auto;
+          max-width: 100%;
           border-radius: 5px;
         }
       }
