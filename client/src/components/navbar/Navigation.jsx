@@ -10,10 +10,12 @@ import MailIcon from '@mui/icons-material/Mail';
 export default function Navigation() {
   return (
     <>
-      <Navbar className='navbar'>
+      <Navbar className='navbar' variant="dark">
         <Navbar.Brand className='navbar-banner'>
           <div className='navbar-logo'>
-            <img src='/images/logo.png' alt='logo' />
+          <Nav.Link className="nav-link" href="#">
+            <img src='/images/logo.svg' alt='logo' />
+          </Nav.Link>
           </div>
           <div className='navbar-title'>
             <h4>Sentiment Tools</h4>
