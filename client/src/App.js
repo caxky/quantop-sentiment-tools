@@ -5,6 +5,7 @@ import Footer from './components/footer/Footer.jsx';
 import Home from './components/home/Home.jsx';
 import Learn from './components/learn/Learn.jsx';
 import Contact from './components/contact/Contact.jsx';
+import Table from './components/dashboard/Table.jsx';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Navigation />
         </Col>
         <Col md={12}>
-          <Contact />
+          <Table />
         </Col>
       </Row>
       <Footer />

@@ -1,0 +1,180 @@
+{ 
+  "data": [
+    {
+      "id": 0,
+      "company": "VIAGRAND",
+      "price": "$376.15",
+      "dayprice": "5%",
+      "weekprice": "33%",
+      "monthprice": "31%",
+      "daysentiment": "25%",
+      "weeksentiment": "13%",
+      "monthsentiment": "39%"
+    },
+    {
+      "id": 1,
+      "company": "BIOTICA",
+      "price": "$249.18",
+      "dayprice": "57%",
+      "weekprice": "76%",
+      "monthprice": "36%",
+      "daysentiment": "47%",
+      "weeksentiment": "58%",
+      "monthsentiment": "87%"
+    },
+    {
+      "id": 2,
+      "company": "EARGO",
+      "price": "$179.95",
+      "dayprice": "15%",
+      "weekprice": "22%",
+      "monthprice": "28%",
+      "daysentiment": "11%",
+      "weeksentiment": "59%",
+      "monthsentiment": "26%"
+    },
+    {
+      "id": 3,
+      "company": "STRALUM",
+      "price": "$353.46",
+      "dayprice": "43%",
+      "weekprice": "84%",
+      "monthprice": "32%",
+      "daysentiment": "7%",
+      "weeksentiment": "100%",
+      "monthsentiment": "75%"
+    },
+    {
+      "id": 4,
+      "company": "BOILCAT",
+      "price": "$153.92",
+      "dayprice": "43%",
+      "weekprice": "68%",
+      "monthprice": "84%",
+      "daysentiment": "36%",
+      "weeksentiment": "78%",
+      "monthsentiment": "61%"
+    },
+    {
+      "id": 5,
+      "company": "TALKALOT",
+      "price": "$227.30",
+      "dayprice": "16%",
+      "weekprice": "16%",
+      "monthprice": "6%",
+      "daysentiment": "50%",
+      "weeksentiment": "59%",
+      "monthsentiment": "38%"
+    },
+    {
+      "id": 6,
+      "company": "CHORIZON",
+      "price": "$21.91",
+      "dayprice": "87%",
+      "weekprice": "4%",
+      "monthprice": "54%",
+      "daysentiment": "55%",
+      "weeksentiment": "17%",
+      "monthsentiment": "64%"
+    },
+    {
+      "id": 7,
+      "company": "GORGANIC",
+      "price": "$145.02",
+      "dayprice": "87%",
+      "weekprice": "68%",
+      "monthprice": "63%",
+      "daysentiment": "92%",
+      "weeksentiment": "48%",
+      "monthsentiment": "33%"
+    },
+    {
+      "id": 8,
+      "company": "EVENTAGE",
+      "price": "$210.37",
+      "dayprice": "0%",
+      "weekprice": "98%",
+      "monthprice": "46%",
+      "daysentiment": "91%",
+      "weeksentiment": "5%",
+      "monthsentiment": "39%"
+    },
+    {
+      "id": 9,
+      "company": "COMVERGES",
+      "price": "$144.43",
+      "dayprice": "77%",
+      "weekprice": "77%",
+      "monthprice": "46%",
+      "daysentiment": "23%",
+      "weeksentiment": "20%",
+      "monthsentiment": "42%"
+    },
+    {
+      "id": 10,
+      "company": "EVENTEX",
+      "price": "$236.66",
+      "dayprice": "19%",
+      "weekprice": "93%",
+      "monthprice": "76%",
+      "daysentiment": "94%",
+      "weeksentiment": "42%",
+      "monthsentiment": "67%"
+    },
+    {
+      "id": 11,
+      "company": "TALKOLA",
+      "price": "$193.38",
+      "dayprice": "2%",
+      "weekprice": "46%",
+      "monthprice": "27%",
+      "daysentiment": "61%",
+      "weeksentiment": "52%",
+      "monthsentiment": "26%"
+    },
+    {
+      "id": 12,
+      "company": "BRAINCLIP",
+      "price": "$136.80",
+      "dayprice": "16%",
+      "weekprice": "84%",
+      "monthprice": "38%",
+      "daysentiment": "13%",
+      "weeksentiment": "33%",
+      "monthsentiment": "32%"
+    },
+    {
+      "id": 13,
+      "company": "ZIZZLE",
+      "price": "$23.12",
+      "dayprice": "50%",
+      "weekprice": "21%",
+      "monthprice": "20%",
+      "daysentiment": "28%",
+      "weeksentiment": "18%",
+      "monthsentiment": "65%"
+    },
+    {
+      "id": 14,
+      "company": "KIGGLE",
+      "price": "$52.80",
+      "dayprice": "15%",
+      "weekprice": "69%",
+      "monthprice": "80%",
+      "daysentiment": "5%",
+      "weeksentiment": "21%",
+      "monthsentiment": "54%"
+    },
+    {
+      "id": 15,
+      "company": "URBANSHEE",
+      "price": "$354.37",
+      "dayprice": "35%",
+      "weekprice": "83%",
+      "monthprice": "48%",
+      "daysentiment": "2%",
+      "weeksentiment": "61%",
+      "monthsentiment": "88%"
+    }
+  ]
+}
