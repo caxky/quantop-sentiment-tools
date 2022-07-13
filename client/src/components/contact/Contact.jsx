@@ -9,9 +9,26 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function Contact() {
   const [show, setShow] = useState(false);
+  const [validated, setValidated] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = (event) => {
+    event.preventDefault();
+    setShow(false);
+    window.location.reload();
+  };
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    event.preventDefault();
+
+    if (form.checkValidity() === false) {
+      event.stopPropagation();
+    } else {
+      setShow(true);
+    }
+
+    setValidated(true);
+  }
 
   return (
     <div className='contact'>
@@ -46,32 +63,67 @@ export default function Contact() {
           <p>Get in contact with us using the form below!</p>
         </div>
 
-        <Form>
+        <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Row>
             <Col>
               <Form.Group controlId="formFirstName">
                 <Form.Label>First Name</Form.Label>
-                <Form.Control type="text" placeholder="First Name" />
+                <Form.Control 
+                  type="text"
+                  name="fname"
+                  placeholder="First Name"
+                  required
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your first name.
+                </Form.Control.Feedback>
               </Form.Group>
             </Col>
             <Col>
               <Form.Group controlId="formLastName">
                 <Form.Label>Last Name</Form.Label>
-                <Form.Control type="text" placeholder="Last Name" />
+                <Form.Control
+                  type="text"
+                  name="lname"
+                  placeholder="Last Name"
+                  required
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your last name.
+                </Form.Control.Feedback>
               </Form.Group>
             </Col>
           </Row>
           <Form.Group controlId="formEmail">
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Email" />
+            <Form.Control 
+              type="email" 
+              name="email"
+              placeholder="Email" 
+              required
+            />
+            <Form.Control.Feedback type="invalid">
+              Please use a valid email.
+            </Form.Control.Feedback>
           </Form.Group>
           <Form.Group controlId="formMessage">
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows="3" />
+            <Form.Control
+              name="message"
+              as="textarea"
+              rows="3"
+              required
+            />
+            <Form.Control.Feedback type="valid">
+              Thank you for your message!
+            </Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">
+              A message is required.
+            </Form.Control.Feedback>
           </Form.Group>
 
           <div className='button-container'>
-            <Button variant="contained" type="button" onClick={handleShow}>
+            <Button variant="contained" type="submit">
               Submit
             </Button>
           </div>
