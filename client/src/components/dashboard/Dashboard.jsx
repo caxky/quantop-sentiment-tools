@@ -16,7 +16,7 @@ export default function Dashboard(props) {
   function getTableData(path) {
     axios({
       method: "GET",
-      url:"http://localhost:5000/"+path,
+      url:"http://localhost:5000"+path,
     })
     .then((response) => {
       const res = response.data
@@ -31,7 +31,7 @@ export default function Dashboard(props) {
   }
 
   useEffect(() => {
-    getTableData("test");
+    getTableData(location.pathname);
   }, [location])
 
   return (
