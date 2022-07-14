@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './Navigation.scss';
 import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -21,7 +22,7 @@ export default function Navigation() {
       <Navbar className={`navbar${isMenuOpen === true ? ' open' : ''}`} variant="dark">
         <Navbar.Brand className='navbar-banner'>
           <div className='navbar-logo'>
-          <Nav.Link className="nav-link" href="/">
+          <Nav.Link as={Link} className="nav-link" to="/">
             <img src='/images/logo.svg' alt='logo' />
           </Nav.Link>
           </div>
@@ -42,10 +43,10 @@ export default function Navigation() {
                 Stocks
               </span> 
             } className="basic-nav-dropdown">
-            <NavDropdown.Item href="/stocks">Overall</NavDropdown.Item>
-            <NavDropdown.Item href="/stocks">News</NavDropdown.Item>
-            <NavDropdown.Item href="/stocks">Reddit</NavDropdown.Item>
-            <NavDropdown.Item href="/stocks">Twitter</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks/overall">Overall</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks/news">News</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks/reddit">Reddit</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks/twitter">Twitter</NavDropdown.Item>
           </NavDropdown>
           
 
@@ -55,10 +56,10 @@ export default function Navigation() {
                 Crypto
               </span> 
             } className="basic-nav-dropdown">
-            <NavDropdown.Item href="/crypto">Overall</NavDropdown.Item>
-            <NavDropdown.Item href="/crypto">News</NavDropdown.Item>
-            <NavDropdown.Item href="/crypto">Reddit</NavDropdown.Item>
-            <NavDropdown.Item href="/crypto">Twitter</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto/overall">Overall</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto/news">News</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto/reddit">Reddit</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto/twitter">Twitter</NavDropdown.Item>
           </NavDropdown>
 
           <Nav.Link className="nav-link" href="/learn">
