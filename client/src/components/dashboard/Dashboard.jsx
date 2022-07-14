@@ -10,11 +10,12 @@ import Graph from './Graph.jsx';
 
 export default function Dashboard(props) {
   const [dashboardData, setDashboardData] = useState({table: [], positiveGraph: [], negativeGraph: []});
+  const [tableHeader, setTableHeader] = useState("");
   const [isLoading, setLoading] = useState(true);
 
   const location = useLocation();
 
-  function getTableData(path) {
+  function getDashboardData(path) {
     axios({
       method: "GET",
       url:"http://localhost:5000"+path,
@@ -36,8 +37,14 @@ export default function Dashboard(props) {
     })
   }
 
+  function getTableHeader(title) {
+    if (title == "Cryptocurrency") setTableHeader("Crypto")
+    else if (title == "Stocks") setTableHeader("Company")
+  }
+
   useEffect(() => {
-    getTableData(location.pathname);
+    getDashboardData(location.pathname);
+    getTableHeader(props.title);
   }, [location])
 
   if (isLoading) {
@@ -83,6 +90,7 @@ export default function Dashboard(props) {
             <Card variant="outlined">
               <CardContent>
                 <Table 
+                  header={tableHeader}
                   data={dashboardData.table}
                 />
               </CardContent>

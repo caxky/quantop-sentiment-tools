@@ -3,10 +3,12 @@ import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 
 export default function Table(props) {
+  const companyHeader = props.header + " Name";
+
   return (
     <DataTable value={props.data} paginator rows={10} sortMode="multiple" removableSort>
       <Column field="id" header="ID" sortable/>
-      <Column field="company" header="Company Name" sortable/>
+      <Column field="company" header={companyHeader} sortable/>
       <Column field="price" header="Price" sortable/>
       <Column field="dayprice" header="24h Price" sortable/>
       <Column field="weekprice" header="7d Price" sortable/>
