@@ -3,6 +3,11 @@
 @import "primereact/resources/primereact.min.css";             
 @import "primeicons/primeicons.css";
 
+body {
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+
 .wrapper {
   min-height: calc(100vh - 40px);
 }

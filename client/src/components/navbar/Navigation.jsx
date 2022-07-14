@@ -77,8 +77,8 @@ export default function Navigation() {
         <IconButton type="button" className="button small" onClick={toggleMenu}>
           {
             (isMenuOpen === true) 
-            ? <ChevronRightIcon fontSize='large'/> 
-            : <ChevronLeftIcon fontSize='large'/>
+            ? <ChevronRightIcon fontSize='large' style={{ color: 'white' }}/> 
+            : <ChevronLeftIcon fontSize='large' style={{ color: 'white' }}/>
           }
         </IconButton>
       </div>
