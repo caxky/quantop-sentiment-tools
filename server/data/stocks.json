@@ -1,0 +1,588 @@
+{ 
+  "table": [
+    {
+      "id": 0,
+      "company": "OULU",
+      "price": "$35.44",
+      "dayprice": "88%",
+      "weekprice": "32%",
+      "monthprice": "80%",
+      "daysentiment": "96%",
+      "weeksentiment": "94%",
+      "monthsentiment": "70%"
+    },
+    {
+      "id": 1,
+      "company": "BIOSPAN",
+      "price": "$48.87",
+      "dayprice": "62%",
+      "weekprice": "44%",
+      "monthprice": "51%",
+      "daysentiment": "73%",
+      "weeksentiment": "57%",
+      "monthsentiment": "71%"
+    },
+    {
+      "id": 2,
+      "company": "ZOGAK",
+      "price": "$52.17",
+      "dayprice": "64%",
+      "weekprice": "45%",
+      "monthprice": "1%",
+      "daysentiment": "1%",
+      "weeksentiment": "17%",
+      "monthsentiment": "18%"
+    },
+    {
+      "id": 3,
+      "company": "BUZZWORKS",
+      "price": "$48.81",
+      "dayprice": "78%",
+      "weekprice": "58%",
+      "monthprice": "100%",
+      "daysentiment": "10%",
+      "weeksentiment": "57%",
+      "monthsentiment": "71%"
+    },
+    {
+      "id": 4,
+      "company": "MIXERS",
+      "price": "$254.34",
+      "dayprice": "77%",
+      "weekprice": "84%",
+      "monthprice": "8%",
+      "daysentiment": "26%",
+      "weeksentiment": "3%",
+      "monthsentiment": "74%"
+    },
+    {
+      "id": 5,
+      "company": "PROVIDCO",
+      "price": "$70.42",
+      "dayprice": "100%",
+      "weekprice": "70%",
+      "monthprice": "93%",
+      "daysentiment": "88%",
+      "weeksentiment": "42%",
+      "monthsentiment": "16%"
+    },
+    {
+      "id": 6,
+      "company": "GEOFORMA",
+      "price": "$45.87",
+      "dayprice": "89%",
+      "weekprice": "91%",
+      "monthprice": "21%",
+      "daysentiment": "26%",
+      "weeksentiment": "42%",
+      "monthsentiment": "94%"
+    },
+    {
+      "id": 7,
+      "company": "AQUACINE",
+      "price": "$350.26",
+      "dayprice": "27%",
+      "weekprice": "9%",
+      "monthprice": "36%",
+      "daysentiment": "68%",
+      "weeksentiment": "28%",
+      "monthsentiment": "93%"
+    },
+    {
+      "id": 8,
+      "company": "INSURON",
+      "price": "$317.95",
+      "dayprice": "17%",
+      "weekprice": "97%",
+      "monthprice": "73%",
+      "daysentiment": "65%",
+      "weeksentiment": "74%",
+      "monthsentiment": "21%"
+    },
+    {
+      "id": 9,
+      "company": "COREPAN",
+      "price": "$357.81",
+      "dayprice": "54%",
+      "weekprice": "67%",
+      "monthprice": "50%",
+      "daysentiment": "87%",
+      "weeksentiment": "30%",
+      "monthsentiment": "52%"
+    },
+    {
+      "id": 10,
+      "company": "STUCCO",
+      "price": "$374.28",
+      "dayprice": "89%",
+      "weekprice": "60%",
+      "monthprice": "48%",
+      "daysentiment": "61%",
+      "weeksentiment": "62%",
+      "monthsentiment": "50%"
+    },
+    {
+      "id": 11,
+      "company": "NITRACYR",
+      "price": "$245.49",
+      "dayprice": "56%",
+      "weekprice": "19%",
+      "monthprice": "11%",
+      "daysentiment": "1%",
+      "weeksentiment": "0%",
+      "monthsentiment": "16%"
+    },
+    {
+      "id": 12,
+      "company": "IMAGINART",
+      "price": "$169.98",
+      "dayprice": "64%",
+      "weekprice": "36%",
+      "monthprice": "24%",
+      "daysentiment": "44%",
+      "weeksentiment": "95%",
+      "monthsentiment": "93%"
+    },
+    {
+      "id": 13,
+      "company": "SONIQUE",
+      "price": "$37.36",
+      "dayprice": "11%",
+      "weekprice": "98%",
+      "monthprice": "30%",
+      "daysentiment": "25%",
+      "weeksentiment": "47%",
+      "monthsentiment": "10%"
+    },
+    {
+      "id": 14,
+      "company": "IMANT",
+      "price": "$325.37",
+      "dayprice": "94%",
+      "weekprice": "88%",
+      "monthprice": "24%",
+      "daysentiment": "1%",
+      "weeksentiment": "16%",
+      "monthsentiment": "7%"
+    },
+    {
+      "id": 15,
+      "company": "DAISU",
+      "price": "$133.50",
+      "dayprice": "78%",
+      "weekprice": "52%",
+      "monthprice": "56%",
+      "daysentiment": "38%",
+      "weeksentiment": "97%",
+      "monthsentiment": "36%"
+    },
+    {
+      "id": 16,
+      "company": "SKYBOLD",
+      "price": "$164.62",
+      "dayprice": "24%",
+      "weekprice": "24%",
+      "monthprice": "76%",
+      "daysentiment": "84%",
+      "weeksentiment": "90%",
+      "monthsentiment": "89%"
+    },
+    {
+      "id": 17,
+      "company": "TECHADE",
+      "price": "$133.51",
+      "dayprice": "47%",
+      "weekprice": "62%",
+      "monthprice": "16%",
+      "daysentiment": "21%",
+      "weeksentiment": "79%",
+      "monthsentiment": "25%"
+    },
+    {
+      "id": 18,
+      "company": "ZIDANT",
+      "price": "$367.50",
+      "dayprice": "25%",
+      "weekprice": "83%",
+      "monthprice": "56%",
+      "daysentiment": "83%",
+      "weeksentiment": "19%",
+      "monthsentiment": "63%"
+    },
+    {
+      "id": 19,
+      "company": "ELECTONIC",
+      "price": "$194.12",
+      "dayprice": "87%",
+      "weekprice": "89%",
+      "monthprice": "31%",
+      "daysentiment": "21%",
+      "weeksentiment": "12%",
+      "monthsentiment": "94%"
+    },
+    {
+      "id": 20,
+      "company": "INJOY",
+      "price": "$345.58",
+      "dayprice": "44%",
+      "weekprice": "16%",
+      "monthprice": "91%",
+      "daysentiment": "36%",
+      "weeksentiment": "29%",
+      "monthsentiment": "100%"
+    },
+    {
+      "id": 21,
+      "company": "OBONES",
+      "price": "$5.98",
+      "dayprice": "40%",
+      "weekprice": "83%",
+      "monthprice": "19%",
+      "daysentiment": "54%",
+      "weeksentiment": "100%",
+      "monthsentiment": "28%"
+    },
+    {
+      "id": 22,
+      "company": "LETPRO",
+      "price": "$270.41",
+      "dayprice": "64%",
+      "weekprice": "9%",
+      "monthprice": "25%",
+      "daysentiment": "51%",
+      "weeksentiment": "87%",
+      "monthsentiment": "45%"
+    },
+    {
+      "id": 23,
+      "company": "EXERTA",
+      "price": "$42.48",
+      "dayprice": "1%",
+      "weekprice": "18%",
+      "monthprice": "57%",
+      "daysentiment": "61%",
+      "weeksentiment": "96%",
+      "monthsentiment": "58%"
+    },
+    {
+      "id": 24,
+      "company": "GONKLE",
+      "price": "$255.29",
+      "dayprice": "97%",
+      "weekprice": "100%",
+      "monthprice": "72%",
+      "daysentiment": "3%",
+      "weeksentiment": "61%",
+      "monthsentiment": "99%"
+    },
+    {
+      "id": 25,
+      "company": "ZAGGLE",
+      "price": "$12.40",
+      "dayprice": "70%",
+      "weekprice": "15%",
+      "monthprice": "12%",
+      "daysentiment": "24%",
+      "weeksentiment": "90%",
+      "monthsentiment": "13%"
+    },
+    {
+      "id": 26,
+      "company": "EARTHPLEX",
+      "price": "$299.76",
+      "dayprice": "95%",
+      "weekprice": "51%",
+      "monthprice": "25%",
+      "daysentiment": "81%",
+      "weeksentiment": "8%",
+      "monthsentiment": "22%"
+    },
+    {
+      "id": 27,
+      "company": "EXTRAWEAR",
+      "price": "$82.25",
+      "dayprice": "44%",
+      "weekprice": "52%",
+      "monthprice": "82%",
+      "daysentiment": "53%",
+      "weeksentiment": "74%",
+      "monthsentiment": "43%"
+    },
+    {
+      "id": 28,
+      "company": "OPTICALL",
+      "price": "$29.96",
+      "dayprice": "71%",
+      "weekprice": "50%",
+      "monthprice": "20%",
+      "daysentiment": "65%",
+      "weeksentiment": "72%",
+      "monthsentiment": "53%"
+    },
+    {
+      "id": 29,
+      "company": "ESSENSIA",
+      "price": "$275.72",
+      "dayprice": "16%",
+      "weekprice": "36%",
+      "monthprice": "35%",
+      "daysentiment": "72%",
+      "weeksentiment": "72%",
+      "monthsentiment": "67%"
+    },
+    {
+      "id": 30,
+      "company": "NURPLEX",
+      "price": "$226.74",
+      "dayprice": "4%",
+      "weekprice": "43%",
+      "monthprice": "83%",
+      "daysentiment": "27%",
+      "weeksentiment": "45%",
+      "monthsentiment": "9%"
+    },
+    {
+      "id": 31,
+      "company": "ASSITIA",
+      "price": "$219.49",
+      "dayprice": "99%",
+      "weekprice": "47%",
+      "monthprice": "49%",
+      "daysentiment": "100%",
+      "weeksentiment": "32%",
+      "monthsentiment": "21%"
+    },
+    {
+      "id": 32,
+      "company": "PHORMULA",
+      "price": "$235.04",
+      "dayprice": "70%",
+      "weekprice": "39%",
+      "monthprice": "40%",
+      "daysentiment": "61%",
+      "weeksentiment": "60%",
+      "monthsentiment": "69%"
+    },
+    {
+      "id": 33,
+      "company": "NETAGY",
+      "price": "$398.27",
+      "dayprice": "9%",
+      "weekprice": "5%",
+      "monthprice": "6%",
+      "daysentiment": "10%",
+      "weeksentiment": "60%",
+      "monthsentiment": "3%"
+    },
+    {
+      "id": 34,
+      "company": "GEEKOLOGY",
+      "price": "$281.15",
+      "dayprice": "56%",
+      "weekprice": "80%",
+      "monthprice": "38%",
+      "daysentiment": "54%",
+      "weeksentiment": "64%",
+      "monthsentiment": "96%"
+    },
+    {
+      "id": 35,
+      "company": "ZAPHIRE",
+      "price": "$221.42",
+      "dayprice": "47%",
+      "weekprice": "10%",
+      "monthprice": "70%",
+      "daysentiment": "80%",
+      "weeksentiment": "37%",
+      "monthsentiment": "45%"
+    },
+    {
+      "id": 36,
+      "company": "ENERSOL",
+      "price": "$66.02",
+      "dayprice": "95%",
+      "weekprice": "24%",
+      "monthprice": "9%",
+      "daysentiment": "82%",
+      "weeksentiment": "40%",
+      "monthsentiment": "38%"
+    },
+    {
+      "id": 37,
+      "company": "VALREDA",
+      "price": "$50.56",
+      "dayprice": "26%",
+      "weekprice": "79%",
+      "monthprice": "49%",
+      "daysentiment": "23%",
+      "weeksentiment": "20%",
+      "monthsentiment": "56%"
+    },
+    {
+      "id": 38,
+      "company": "QABOOS",
+      "price": "$269.16",
+      "dayprice": "91%",
+      "weekprice": "86%",
+      "monthprice": "16%",
+      "daysentiment": "100%",
+      "weeksentiment": "14%",
+      "monthsentiment": "97%"
+    },
+    {
+      "id": 39,
+      "company": "PAWNAGRA",
+      "price": "$212.84",
+      "dayprice": "83%",
+      "weekprice": "31%",
+      "monthprice": "48%",
+      "daysentiment": "61%",
+      "weeksentiment": "54%",
+      "monthsentiment": "45%"
+    },
+    {
+      "id": 40,
+      "company": "RECRISYS",
+      "price": "$58.44",
+      "dayprice": "47%",
+      "weekprice": "3%",
+      "monthprice": "75%",
+      "daysentiment": "21%",
+      "weeksentiment": "31%",
+      "monthsentiment": "100%"
+    },
+    {
+      "id": 41,
+      "company": "WAAB",
+      "price": "$188.85",
+      "dayprice": "56%",
+      "weekprice": "36%",
+      "monthprice": "82%",
+      "daysentiment": "63%",
+      "weeksentiment": "9%",
+      "monthsentiment": "88%"
+    },
+    {
+      "id": 42,
+      "company": "ORBOID",
+      "price": "$45.21",
+      "dayprice": "77%",
+      "weekprice": "23%",
+      "monthprice": "80%",
+      "daysentiment": "92%",
+      "weeksentiment": "77%",
+      "monthsentiment": "83%"
+    },
+    {
+      "id": 43,
+      "company": "STEELFAB",
+      "price": "$115.67",
+      "dayprice": "65%",
+      "weekprice": "23%",
+      "monthprice": "34%",
+      "daysentiment": "71%",
+      "weeksentiment": "84%",
+      "monthsentiment": "54%"
+    },
+    {
+      "id": 44,
+      "company": "FLOTONIC",
+      "price": "$372.19",
+      "dayprice": "71%",
+      "weekprice": "15%",
+      "monthprice": "70%",
+      "daysentiment": "51%",
+      "weeksentiment": "92%",
+      "monthsentiment": "73%"
+    },
+    {
+      "id": 45,
+      "company": "NETBOOK",
+      "price": "$260.07",
+      "dayprice": "63%",
+      "weekprice": "14%",
+      "monthprice": "27%",
+      "daysentiment": "99%",
+      "weeksentiment": "28%",
+      "monthsentiment": "36%"
+    },
+    {
+      "id": 46,
+      "company": "PYRAMI",
+      "price": "$51.46",
+      "dayprice": "70%",
+      "weekprice": "74%",
+      "monthprice": "80%",
+      "daysentiment": "58%",
+      "weeksentiment": "16%",
+      "monthsentiment": "2%"
+    },
+    {
+      "id": 47,
+      "company": "DUOFLEX",
+      "price": "$36.60",
+      "dayprice": "87%",
+      "weekprice": "59%",
+      "monthprice": "69%",
+      "daysentiment": "95%",
+      "weeksentiment": "95%",
+      "monthsentiment": "53%"
+    },
+    {
+      "id": 48,
+      "company": "EVENTIX",
+      "price": "$1.85",
+      "dayprice": "97%",
+      "weekprice": "40%",
+      "monthprice": "28%",
+      "daysentiment": "60%",
+      "weeksentiment": "69%",
+      "monthsentiment": "5%"
+    },
+    {
+      "id": 49,
+      "company": "MAINELAND",
+      "price": "$327.78",
+      "dayprice": "14%",
+      "weekprice": "35%",
+      "monthprice": "78%",
+      "daysentiment": "40%",
+      "weeksentiment": "8%",
+      "monthsentiment": "56%"
+    }
+  ],
+  "positiveGraph": [
+    {
+      "timescale": "24h",
+      "labels": ["MSFT", "APPL", "GOOG", "AMZN", "PLTR", "PLTR", "FB", "TWTR", "YHOO", "NVDA"],
+      "values": [78, 79, 80, 81, 82, 83, 84, 85, 86, 87]
+    },
+    {
+      "timescale": "7d",
+      "labels": ["MSFT", "APPL", "GOOG", "AMZN", "PLTR", "PLTR", "FB", "TWTR", "YHOO", "NVDA"],
+      "values": [50,60,5,3,4,3,4,5,6,7,8]
+    },
+    {
+      "timescale": "30d",
+      "labels": ["MSFT", "APPL", "GOOG", "AMZN", "PLTR", "PLTR", "FB", "TWTR", "YHOO", "NVDA"],
+      "values": [12,13,14,15,16,17,18,19,20,21]
+    }
+  ],
+  "negativeGraph": [
+    {
+      "timescale": "24h",
+      "labels": ["MSFT", "APPL", "GOOG", "AMZN", "PLTR", "PLTR", "FB", "TWTR", "YHOO", "NVDA"],
+      "values": [1,2,3,4,5,6,7,8,9,10]
+    },
+    {
+      "timescale": "7d",
+      "labels": ["MSFT", "APPL", "GOOG", "AMZN", "PLTR", "PLTR", "FB", "TWTR", "YHOO", "NVDA"],
+      "values": [50,60,5,3,4,3,4,5,6,7,8]
+    },
+    {
+      "timescale": "30d",
+      "labels": ["MSFT", "APPL", "GOOG", "AMZN", "PLTR", "PLTR", "FB", "TWTR", "YHOO", "NVDA"],
+      "values": [12,13,14,15,16,17,18,19,20,21]
+    }
+  ]
+}

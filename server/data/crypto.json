@@ -1,0 +1,148 @@
+{
+  "table": [
+      {
+      "id": 0,
+      "company": "BTC",
+      "price": "$35.44",
+      "dayprice": "88%",
+      "weekprice": "32%",
+      "monthprice": "80%",
+      "daysentiment": "96%",
+      "weeksentiment": "94%",
+      "monthsentiment": "70%"
+      },
+      {
+      "id": 1,
+      "company": "ETH",
+      "price": "$48.87",
+      "dayprice": "62%",
+      "weekprice": "44%",
+      "monthprice": "51%",
+      "daysentiment": "73%",
+      "weeksentiment": "57%",
+      "monthsentiment": "71%"
+      },
+      {
+      "id": 2,
+      "company": "SOL",
+      "price": "$52.17",
+      "dayprice": "64%",
+      "weekprice": "45%",
+      "monthprice": "1%",
+      "daysentiment": "1%",
+      "weeksentiment": "17%",
+      "monthsentiment": "18%"
+      },
+      {
+      "id": 3,
+      "company": "ADA",
+      "price": "$48.81",
+      "dayprice": "78%",
+      "weekprice": "58%",
+      "monthprice": "100%",
+      "daysentiment": "10%",
+      "weeksentiment": "57%",
+      "monthsentiment": "71%"
+      },
+      {
+      "id": 4,
+      "company": "AVAX",
+      "price": "$254.34",
+      "dayprice": "77%",
+      "weekprice": "84%",
+      "monthprice": "8%",
+      "daysentiment": "26%",
+      "weeksentiment": "3%",
+      "monthsentiment": "74%"
+      },
+      {
+      "id": 5,
+      "company": "BNB",
+      "price": "$70.42",
+      "dayprice": "100%",
+      "weekprice": "70%",
+      "monthprice": "93%",
+      "daysentiment": "88%",
+      "weeksentiment": "42%",
+      "monthsentiment": "16%"
+      },
+      {
+      "id": 6,
+      "company": "XRP",
+      "price": "$45.87",
+      "dayprice": "89%",
+      "weekprice": "91%",
+      "monthprice": "21%",
+      "daysentiment": "26%",
+      "weeksentiment": "42%",
+      "monthsentiment": "94%"
+      },
+      {
+      "id": 7,
+      "company": "DOT",
+      "price": "$350.26",
+      "dayprice": "27%",
+      "weekprice": "9%",
+      "monthprice": "36%",
+      "daysentiment": "68%",
+      "weeksentiment": "28%",
+      "monthsentiment": "93%"
+      },
+      {
+      "id": 8,
+      "company": "MATIC",
+      "price": "$317.95",
+      "dayprice": "17%",
+      "weekprice": "97%",
+      "monthprice": "73%",
+      "daysentiment": "65%",
+      "weeksentiment": "74%",
+      "monthsentiment": "21%"
+      },
+      {
+      "id": 9,
+      "company": "DOGE",
+      "price": "$357.81",
+      "dayprice": "54%",
+      "weekprice": "67%",
+      "monthprice": "50%",
+      "daysentiment": "87%",
+      "weeksentiment": "30%",
+      "monthsentiment": "52%"
+      }
+  ],
+  "positiveGraph": [
+    {
+      "timescale": "24h",
+      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
+      "values": [78, 79, 80, 81, 82, 83, 84, 85, 86, 87]
+    },
+    {
+      "timescale": "7d",
+      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
+      "values": [50,60,5,3,4,3,4,5,6,7,8]
+    },
+    {
+      "timescale": "30d",
+      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
+      "values": [12,13,14,15,16,17,18,19,20,21]
+    }
+  ],
+  "negativeGraph": [
+    {
+      "timescale": "24h",
+      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
+      "values": [1,2,3,4,5,6,7,8,9,10]
+    },
+    {
+      "timescale": "7d",
+      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
+      "values": [50,60,5,3,4,3,4,5,6,7,8]
+    },
+    {
+      "timescale": "30d",
+      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
+      "values": [12,13,14,15,16,17,18,19,20,21]
+    }
+  ]
+}
