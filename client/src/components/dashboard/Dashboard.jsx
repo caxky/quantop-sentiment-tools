@@ -9,7 +9,8 @@ import Table from './Table.jsx';
 import Graph from './Graph.jsx';
 
 export default function Dashboard(props) {
-  const [tableData, setTableData] = useState([]);
+  const [dashboardData, setDashboardData] = useState({table: [], positiveGraph: [], negativeGraph: []});
+  const [isLoading, setLoading] = useState(true);
 
   const location = useLocation();
 
@@ -20,7 +21,12 @@ export default function Dashboard(props) {
     })
     .then((response) => {
       const res = response.data
-      setTableData(({data: res.data}))
+      setDashboardData(({
+        table: res.table,
+        positiveGraph : res.positiveGraph,
+        negativeGraph : res.negativeGraph
+      }))
+      setLoading(false)
     }).catch((error) => {
       if (error.response) {
         console.log(error.response)
@@ -34,6 +40,10 @@ export default function Dashboard(props) {
     getTableData(location.pathname);
   }, [location])
 
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  
   return (
     <div className='dashboard'>
       <div className='dashboard-banner'>
@@ -49,8 +59,7 @@ export default function Dashboard(props) {
                   <Graph 
                     label="Positive Sentiment"
                     color='#27C225'
-                    labels={props.labels}
-                    data={[78, 79, 80, 81, 82, 83, 84, 85, 86, 87]}
+                    data={dashboardData.positiveGraph}
                   />
                 </CardContent>
               </Card>
@@ -62,8 +71,7 @@ export default function Dashboard(props) {
                   <Graph 
                     label="Negative Sentiment"
                     color='#C42121'
-                    labels={props.labels}
-                    data={[40, 39, 38, 37, 36, 35, 34, 33, 32, 31]}
+                    data={dashboardData.positiveGraph}
                   />
                 </CardContent>
               </Card>
@@ -75,7 +83,7 @@ export default function Dashboard(props) {
             <Card variant="outlined">
               <CardContent>
                 <Table 
-                  data={tableData.data}
+                  data={dashboardData.table}
                 />
               </CardContent>
             </Card>

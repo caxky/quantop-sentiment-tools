@@ -4,23 +4,59 @@ import { Chart } from 'primereact/chart';
 import { ToggleButton, ToggleButtonGroup, Box } from '@mui/material';
 
 export default function Table(props) {
-
-  const [alignment, setAlignment] = React.useState('24h');
+  const [alignment, setAlignment] = useState('24h');
+  const [graphData, setGraphData] = useState({});
 
   const handleChange = (event, newAlignment) => {
     setAlignment(newAlignment);
+    if (newAlignment == '24h') {
+      setGraphData({
+        labels: props.data[0].labels,
+        datasets: [
+          {
+            label: props.label,
+            backgroundColor: props.color,
+            data: props.data[0].values,
+          }
+        ]
+      })
+    } else if (newAlignment == '7d') {
+      setGraphData({
+        labels: props.data[1].labels,
+        datasets: [
+          {
+            label: props.label,
+            backgroundColor: props.color,
+            data: props.data[1].values,
+          }
+        ]
+      })
+    } else if (newAlignment == '30d') {
+      setGraphData({
+        labels: props.data[2].labels,
+        datasets: [
+          {
+            label: props.label,
+            backgroundColor: props.color,
+            data: props.data[2].values,
+          }
+        ]
+      })
+    }
   };
 
-  const [graphData] = useState({
-    labels: props.labels,
-    datasets: [
-      {
-        label: props.label,
-        backgroundColor: props.color,
-        data: props.data,
-      }
-    ]
-  });
+  useEffect(() => {
+    setGraphData({
+      labels: props.data[0].labels,
+      datasets: [
+        {
+          label: props.label,
+          backgroundColor: props.color,
+          data: props.data[0].values,
+        }
+      ]
+    })
+  }, [])
 
   const graphOptions = {
     scales: {

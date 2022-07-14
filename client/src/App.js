@@ -23,7 +23,6 @@ function App() {
             <Route path='/stocks/overall' element={<Dashboard
               title="Stocks"
               subtitle="Overall"
-              labels={['MSFT', 'APPL', 'GOOG', 'AMZN', 'PLTR', 'ZOOM', 'FB', 'TWTR', 'YHOO', 'NVDA']}
             />}/>
             <Route path='/stocks/news' element={<Dashboard
               title="Stocks"
