@@ -6,16 +6,30 @@
   margin-top: 50px;
 
   .sections {
-    width: 90%;
     max-width: 900px;
 
     .top {
       text-align: center;
+      padding: 8px;
     }
 
     .section {
       margin-top: 25px;
       margin-bottom: 25px;
+      margin-left: 8px;
+      margin-right: 8px;
+      color: black;
+      background-color: rgb(209, 209, 209);
+      border-radius: 8px;
+
+      .section-title {
+        margin-left: 8px;
+        padding-top: 5px;
+
+        h5 {
+          font-weight: 600;
+        }
+      }
 
       .col {
         width: 100%;
@@ -24,15 +38,22 @@
       .section-content {
         display: flex;
         text-align: left;
+        color: black;
+        margin: 0;
         justify-content: center;
         align-items: center;
 
         img {
           height: auto;
           max-width: 100%;
+          margin: 12px;
           border-radius: 5px;
         }
       }
     }
+  }
+
+  .list-group-item {
+    background-color: rgb(209, 209, 209);
   }
 }
