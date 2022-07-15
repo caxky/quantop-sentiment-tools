@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import { Col, Row } from 'react-bootstrap';
+import Card from '@mui/material/Card';
 
 export default function Home() {
   return (
