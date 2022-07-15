@@ -9,6 +9,10 @@
     margin-top: 50px;
     width: 50%;
 
+    .links-header {
+      margin-bottom: 20px;
+    }
+
     .contact-link {
       display: flex;
       align-items: center;
@@ -36,6 +40,10 @@
     margin-top: 80px;
     margin-bottom: 40px;
     width: 50%;
+
+    label {
+      margin-top: 8px;
+    }
   }
 }
 
