@@ -3,22 +3,24 @@ import './Home.scss';
 import { Col, Row } from 'react-bootstrap';
 import Card from '@mui/material/Card';
 
+import { useTranslation } from 'react-i18next';
+
 export default function Home() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='home'>
       <div className='home-banner'>
         <div className='home-banner-logo'>
           <img src='/images/logo.svg' alt='logo' />
         </div>
-        <h2>Sentiment Analysis Tools</h2>
+        <h2>{t('Sentiment Analysis Tools')}</h2>
       </div>
 
       <div className='tool-summary'>
         <div className='tool-summary-item'>
           <p>
-            Stock Sentiment Analysis,
-            Cryptocurrency Analysis,
-            Learning
+            {t('Stock Sentiment Analysis\, Cryptocurrency Analysis\, Learning')}
           </p>
         </div>
       </div>
@@ -26,7 +28,7 @@ export default function Home() {
       <div className='sections'>
         <Col className='section' md={8}>
           <div className='section-title'>
-            <h5>Stock Analysis</h5>
+            <h5>{t('Stock Analysis')}</h5>
           </div>
           <Row className='section-content'>
             <Col md={4}>
@@ -36,17 +38,17 @@ export default function Home() {
             </Col>
             <Col md={8}>
               <ul className='breakdown-list'>
-                <li>Current price and sentiment data</li>
-                <li>Most positive/most negative sentiment graphs</li>
-                <li>Time scales</li>
-                <li>Data table for thousands of companies</li>
+                <li>{t('Current price and sentiment data')}</li>
+                <li>{t('Most positive/most negative sentiment graphs')}</li>
+                <li>{t('Time scales')}</li>
+                <li>{t('Data table for thousands of companies')}</li>
               </ul>
             </Col>
           </Row>
         </Col>
         <Col className='section' md={8}>
           <div className='section-title'>
-            <h5>Cryptocurrency Analysis</h5>
+            <h5>{t('Cryptocurrency Analysis')}</h5>
           </div>
           <Row className='section-content'>
             <Col md={4}>
@@ -56,17 +58,17 @@ export default function Home() {
             </Col>
             <Col md={8}>
               <ul className='breakdown-list'>
-                <li>Current price and sentiment data</li>
-                <li>Most positive/most negative sentiment graphs</li>
-                <li>Time scales</li>
-                <li>Data table for hundreds of currencies</li>
+                <li>{t('Current price and sentiment data')}</li>
+                <li>{t('Most positive/most negative sentiment graphs')}</li>
+                <li>{t('Time scales')}</li>
+                <li>{t('Data table for hundreds of currencies')}</li>
               </ul>
             </Col>
           </Row>
         </Col>
         <Col className='section' md={8}>
           <div className='section-title'>
-            <h5>Learn</h5>
+            <h5>{t('Learn')}</h5>
           </div>
           <Row className='section-content'>
             <Col md={4}>
@@ -76,9 +78,9 @@ export default function Home() {
             </Col>
             <Col md={8}>
               <ul className='breakdown-list'>
-                <li>Technical analysis</li>
-                <li>Fundamental analysis</li>
-                <li>Common terms</li>
+                <li>{t('Technical analysis')}</li>
+                <li>{t('Fundamental analysis')}</li>
+                <li>{t('Common terms')}</li>
               </ul>
             </Col>
           </Row>

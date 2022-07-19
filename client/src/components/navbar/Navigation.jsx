@@ -12,8 +12,19 @@ import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import MailIcon from '@mui/icons-material/Mail';
 
+import { useTranslation } from "react-i18next";
+
 export default function Navigation() {
+  const { i18n } = useTranslation();
+  const [language, setLanguage] = useState("en");
   const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleLangChange = evt => {
+    const lang = evt.target.value;
+    console.log(lang);
+    setLanguage(lang);
+    i18n.changeLanguage(lang);
+  };
 
   const toggleMenu = () => setMenuOpen(!isMenuOpen);
 
@@ -72,6 +83,11 @@ export default function Navigation() {
             Contact
           </Nav.Link>
         </Nav>
+
+        <select className='language-select' onChange={handleLangChange} value={language}>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+        </select>
       </Navbar>
       <div className={`navbar-button${isMenuOpen === true ? ' open' : ''}`}>
         <IconButton type="button" className="button small" onClick={toggleMenu}>
