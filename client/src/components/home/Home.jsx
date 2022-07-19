@@ -30,7 +30,9 @@ export default function Home() {
           </div>
           <Row className='section-content'>
             <Col md={4}>
-              <img src='/images/stock-graph.jpg' alt='stock graph'></img>
+              <a href="/stocks/overall">
+                <img src='/images/stock-graph.jpg' alt='stock graph'></img>
+              </a>
             </Col>
             <Col md={8}>
               <ul className='breakdown-list'>
@@ -48,7 +50,9 @@ export default function Home() {
           </div>
           <Row className='section-content'>
             <Col md={4}>
-              <img src='/images/crypto-image.jpg' alt='bitcoin on circuit'></img>
+              <a href="/crypto/overall">
+                <img src='/images/crypto-image.jpg' alt='bitcoin on circuit'></img>
+              </a>
             </Col>
             <Col md={8}>
               <ul className='breakdown-list'>
@@ -66,7 +70,9 @@ export default function Home() {
           </div>
           <Row className='section-content'>
             <Col md={4}>
-              <img src='/images/books.jpg' alt='books'></img>
+              <a href="/learn">
+                <img src='/images/books.jpg' alt='books'></img>
+              </a>
             </Col>
             <Col md={8}>
               <ul className='breakdown-list'>
