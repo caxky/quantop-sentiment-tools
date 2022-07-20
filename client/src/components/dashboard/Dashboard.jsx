@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 import { Card, CardHeader, CardContent } from '@mui/material';
+import { Dot } from 'react-animated-dots';
 import Table from './Table.jsx';
 import Graph from './Graph.jsx';
 
@@ -48,7 +49,7 @@ export default function Dashboard(props) {
   }, [location])
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className='loading'>Loading<Dot>.</Dot><Dot>.</Dot><Dot>.</Dot></div>;
   }
   
   return (
