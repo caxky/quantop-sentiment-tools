@@ -6,6 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CircleIcon from '@mui/icons-material/Circle';
 
 import { useTranslation } from 'react-i18next';
 
@@ -136,6 +137,7 @@ export default function Contact() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header>
+          <span><CircleIcon sx={{ color: "white", fontSize: 80 }} /></span>
           <span><CheckCircleIcon sx={{ color: "green", fontSize: 90 }} /></span>
           <Modal.Title>{t('Thank you!')}</Modal.Title>
         </Modal.Header>
