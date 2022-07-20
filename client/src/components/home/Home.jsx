@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.scss';
 import { Col, Row } from 'react-bootstrap';
-import Card from '@mui/material/Card';
 
 import { useTranslation } from 'react-i18next';
 
@@ -20,7 +19,7 @@ export default function Home() {
       <div className='tool-summary'>
         <div className='tool-summary-item'>
           <p>
-            {t('Stock Sentiment Analysis\, Cryptocurrency Analysis\, Learning')}
+            {t('Stock Analysis\, Cryptocurrency Analysis\, Learning')}
           </p>
         </div>
       </div>

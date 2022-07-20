@@ -7,7 +7,7 @@ const resources = {
     translation: {
       "Welcome to React": "Welcome to React and react-i18next",
       "Sentiment Analysis Tools": "Sentiment Analysis Tools",
-      "Stock Sentiment Analysis, Cryptocurrency Analysis, Learning": "Stock Sentiment Analysis, Cryptocurrency Analysis, Learning",
+      "Stock Analysis, Cryptocurrency Analysis, Learning": "Stock Analysis, Cryptocurrency Analysis, Learning",
       "Stock Analysis": "Stock Analysis",
       "Current price and sentiment data": "Current price and sentiment data",
       "Most positive/most negative sentiment graphs": "Most positive/most negative sentiment graphs",
@@ -72,7 +72,7 @@ const resources = {
     translation: {
       "Welcome to React": "Bienvenue à React et react-i18next",
       "Sentiment Analysis Tools": "Outils d'analyse de sentiment",
-      "Stock Sentiment Analysis, Cryptocurrency Analysis, Learning": "Analyse de sentiment des actions, analyse de cryptomonnaies, apprentissage",
+      "Stock Analysis, Cryptocurrency Analysis, Learning": "Analyse de actions, analyse de cryptomonnaies, apprentissage",
       "Stock Analysis": "Analyse des actions",
       "Current price and sentiment data": "Prix actuel et données de sentiment",
       "Most positive/most negative sentiment graphs": "Graphiques de sentiment le plus positif/le plus négatif",
