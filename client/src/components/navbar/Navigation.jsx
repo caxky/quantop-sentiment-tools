@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Navigation.scss';
 import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
@@ -15,7 +15,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import { useTranslation } from "react-i18next";
 
 export default function Navigation() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState("en");
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -25,6 +25,10 @@ export default function Navigation() {
     setLanguage(lang);
     i18n.changeLanguage(lang);
   };
+
+  useEffect(() => {
+    setLanguage(i18n.language);
+  })
 
   const toggleMenu = () => setMenuOpen(!isMenuOpen);
 
@@ -38,49 +42,49 @@ export default function Navigation() {
           </Nav.Link>
           </div>
           <div className='navbar-title'>
-            <h4>Sentiment Tools</h4>
+            <h4>{t('Sentiment Tools')}</h4>
           </div>
         </Navbar.Brand>
 
         <Nav className="navbar-nav">
           <Nav.Link className="nav-link" href="/">
             <HomeIcon />
-            Home
+            {t('Home')}
           </Nav.Link>
 
           <NavDropdown title={ 
               <span>
                 <TimelineIcon />
-                Stocks
+                {t('Stocks')}
               </span> 
             } className="basic-nav-dropdown">
-            <NavDropdown.Item href="/stocks/overall">Overall</NavDropdown.Item>
-            <NavDropdown.Item href="/stocks/news">News</NavDropdown.Item>
-            <NavDropdown.Item href="/stocks/reddit">Reddit</NavDropdown.Item>
-            <NavDropdown.Item href="/stocks/twitter">Twitter</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks/overall">{t('Overall')}</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks/news">{t('News')}</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks/reddit">{t('Reddit')}</NavDropdown.Item>
+            <NavDropdown.Item href="/stocks/twitter">{t('Twitter')}</NavDropdown.Item>
           </NavDropdown>
           
 
           <NavDropdown title={ 
               <span>
                 <CurrencyBitcoinIcon />
-                Crypto
+                {t('Crypto')}
               </span> 
             } className="basic-nav-dropdown">
-            <NavDropdown.Item href="/crypto/overall">Overall</NavDropdown.Item>
-            <NavDropdown.Item href="/crypto/news">News</NavDropdown.Item>
-            <NavDropdown.Item href="/crypto/reddit">Reddit</NavDropdown.Item>
-            <NavDropdown.Item href="/crypto/twitter">Twitter</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto/overall">{t('Overall')}</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto/news">{t('News')}</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto/reddit">{t('Reddit')}</NavDropdown.Item>
+            <NavDropdown.Item href="/crypto/twitter">{t('Twitter')}</NavDropdown.Item>
           </NavDropdown>
 
           <Nav.Link className="nav-link" href="/learn">
             <MenuBookIcon />
-            Learn
+            {t("Learn")}
           </Nav.Link>
 
           <Nav.Link className="nav-link" href="/contact">
             <MailIcon />
-            Contact
+            {t('Contact')}
           </Nav.Link>
         </Nav>
 
