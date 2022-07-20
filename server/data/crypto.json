@@ -109,40 +109,76 @@
       "daysentiment": "87%",
       "weeksentiment": "30%",
       "monthsentiment": "52%"
+      },
+      {
+        "id": 121,
+        "company": "SHIB",
+        "price": "$77.21",
+        "dayprice": "55%",
+        "weekprice": "84%",
+        "monthprice": "73%",
+        "daysentiment": "95%",
+        "weeksentiment": "26%",
+        "monthsentiment": "40%"
+      },
+      {
+        "id": 122,
+        "company": "TRX",
+        "price": "$30.60",
+        "dayprice": "77%",
+        "weekprice": "60%",
+        "monthprice": "79%",
+        "daysentiment": "92%",
+        "weeksentiment": "55%",
+        "monthsentiment": "83%"
+      },
+      {
+        "id": 123,
+        "company": "UNI",
+        "price": "$93.04",
+        "dayprice": "63%",
+        "weekprice": "85%",
+        "monthprice": "79%",
+        "daysentiment": "62%",
+        "weeksentiment": "4%",
+        "monthsentiment": "42%"
+      },
+      {
+        "id": 124,
+        "company": "NEAR",
+        "price": "$133.90",
+        "dayprice": "23%",
+        "weekprice": "22%",
+        "monthprice": "36%",
+        "daysentiment": "7%",
+        "weeksentiment": "55%",
+        "monthsentiment": "9%"
+      },
+      {
+        "id": 125,
+        "company": "ETC",
+        "price": "$247.94",
+        "dayprice": "44%",
+        "weekprice": "96%",
+        "monthprice": "86%",
+        "daysentiment": "86%",
+        "weeksentiment": "33%",
+        "monthsentiment": "3%"
+      },
+      {
+        "id": 126,
+        "company": "CRO",
+        "price": "$172.54",
+        "dayprice": "14%",
+        "weekprice": "55%",
+        "monthprice": "14%",
+        "daysentiment": "28%",
+        "weeksentiment": "82%",
+        "monthsentiment": "59%"
       }
   ],
   "positiveGraph": [
-    {
-      "timescale": "24h",
-      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
-      "values": [78, 79, 80, 81, 82, 83, 84, 85, 86, 87]
-    },
-    {
-      "timescale": "7d",
-      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
-      "values": [50,60,5,3,4,3,4,5,6,7,8]
-    },
-    {
-      "timescale": "30d",
-      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
-      "values": [12,13,14,15,16,17,18,19,20,21]
-    }
   ],
   "negativeGraph": [
-    {
-      "timescale": "24h",
-      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
-      "values": [1,2,3,4,5,6,7,8,9,10]
-    },
-    {
-      "timescale": "7d",
-      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
-      "values": [50,60,5,3,4,3,4,5,6,7,8]
-    },
-    {
-      "timescale": "30d",
-      "labels": ["ETH", "BTC", "AVAX", "SOL", "ADA", "XMR", "DOGE", "DOT", "MATIC", "BNB"],
-      "values": [12,13,14,15,16,17,18,19,20,21]
-    }
   ]
 }

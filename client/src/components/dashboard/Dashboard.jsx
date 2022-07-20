@@ -78,7 +78,7 @@ export default function Dashboard(props) {
                   <Graph 
                     label="Negative Sentiment"
                     color='#C42121'
-                    data={dashboardData.positiveGraph}
+                    data={dashboardData.negativeGraph}
                   />
                 </CardContent>
               </Card>
