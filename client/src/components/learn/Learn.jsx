@@ -30,7 +30,7 @@ export default function Learn() {
           </div>
           <Row className='section-content'>
             <Col md={4}>
-              <img src='/images/stock-graph.jpg' alt='stock graph'></img>
+              <img src='/images/fundamental.jpg' alt='stock graph'></img>
             </Col>
             <Col md={8}>
               <ul className='breakdown-list'>
@@ -49,7 +49,7 @@ export default function Learn() {
           </div>
           <Row className='section-content'>
             <Col md={4}>
-              <img src='/images/stock-graph.jpg' alt='stock graph'></img>
+              <img src='/images/technical.png' alt='stock graph'></img>
             </Col>
             <Col md={8}>
               <ul className='breakdown-list'>
