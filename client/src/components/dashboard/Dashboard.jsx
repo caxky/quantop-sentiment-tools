@@ -19,7 +19,7 @@ export default function Dashboard(props) {
   function getDashboardData(path) {
     axios({
       method: "GET",
-      url:"http://localhost:5000"+path,
+      url:"https://powerful-fjord-45838.herokuapp.com/"+path,
     })
     .then((response) => {
       const res = response.data
