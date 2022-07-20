@@ -4,6 +4,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import NoPage from './components/nopage/NoPage.jsx';
 import Navigation from './components/navbar/Navigation.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Home from './components/home/Home.jsx';
@@ -19,6 +20,7 @@ function App() {
       <Navigation/>
         <div className='wrapper'>
           <Routes>
+            <Route path='*' element={<NoPage/>}/>
             <Route path='/' element={<Home/>}/>
             <Route path='/stocks/overall' element={<Dashboard
               title="Stocks"
