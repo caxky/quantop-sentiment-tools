@@ -1442,8 +1442,6 @@
       "monthsentiment": "96%"
     }
   ],
-  "positiveGraph": [
-  ],
-  "negativeGraph": [
-  ]
+  "positiveGraph": [],
+  "negativeGraph": []
 }
