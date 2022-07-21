@@ -16,6 +16,11 @@ export default function Contact() {
   const [show, setShow] = useState(false);
   const [validated, setValidated] = useState(false);
 
+  const [fname, setFname] = useState('');
+  const [lname, setLname] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
   const handleClose = (event) => {
     event.preventDefault();
     setShow(false);
@@ -34,6 +39,14 @@ export default function Contact() {
 
     setValidated(true);
   }
+
+  const resetForm = () => {
+    setFname('');
+    setLname('');
+    setEmail('');
+    setMessage('');
+  }
+
 
   return (
     <div className='contact'>
@@ -77,6 +90,8 @@ export default function Contact() {
                   type="text"
                   name="fname"
                   placeholder={t('First Name')}
+                  value={fname}
+                  onChange={(e) => setFname(e.target.value)}
                   required
                 />
                 <Form.Control.Feedback type="invalid">
@@ -91,6 +106,8 @@ export default function Contact() {
                   type="text"
                   name="lname"
                   placeholder={t('Last Name')}
+                  value={lname}
+                  onChange={(e) => setLname(e.target.value)}
                   required
                 />
                 <Form.Control.Feedback type="invalid">
@@ -105,6 +122,8 @@ export default function Contact() {
               type="email" 
               name="email"
               placeholder={t('Email')}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
             <Form.Control.Feedback type="invalid">
@@ -117,6 +136,8 @@ export default function Contact() {
               name="message"
               as="textarea"
               rows="3"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
             />
             <Form.Control.Feedback type="valid">
@@ -128,6 +149,10 @@ export default function Contact() {
           </Form.Group>
 
           <div className='button-container'>
+            <Button variant="outlined" type="button" onClick={resetForm}>
+              {t('Reset')}
+            </Button>
+
             <Button variant="contained" type="submit">
               {t('Submit')}
             </Button>
