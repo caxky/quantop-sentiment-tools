@@ -6,6 +6,15 @@ from flask_cors import CORS, cross_origin
 app = Flask(__name__, static_folder='../client/build', static_url_path='')
 CORS(app)
 
+def calculate_market_cap(list):
+    market_cap = []
+
+    for x in list:
+        n = int(re.findall('\d+', x['marketcap'])[0])
+        market_cap.append(n)
+
+    return sum(market_cap)
+
 def sort_by_daysentiment(list):
     n = int(re.findall('\d+', list['daysentiment'])[0])
     return n
@@ -49,6 +58,10 @@ def get_stocks_overall():
 
     negativeMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[:10], 'monthsentiment')
     positiveMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[-10:], 'monthsentiment')
+
+    marketCap = calculate_market_cap(data['table'])
+
+    data['marketCap'] = marketCap
 
     data['negativeGraph'].append(
         {
@@ -115,6 +128,10 @@ def get_stocks_news():
     negativeMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[:10], 'monthsentiment')
     positiveMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[-10:], 'monthsentiment')
 
+    marketCap = calculate_market_cap(data['table'])
+
+    data['marketCap'] = marketCap
+
     data['negativeGraph'].append(
         {
             "timescale": "24h",
@@ -179,6 +196,10 @@ def get_stocks_reddit():
 
     negativeMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[:10], 'monthsentiment')
     positiveMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[-10:], 'monthsentiment')
+
+    marketCap = calculate_market_cap(data['table'])
+
+    data['marketCap'] = marketCap
 
     data['negativeGraph'].append(
         {
@@ -245,6 +266,10 @@ def get_stocks_twitter():
     negativeMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[:10], 'monthsentiment')
     positiveMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[-10:], 'monthsentiment')
 
+    marketCap = calculate_market_cap(data['table'])
+
+    data['marketCap'] = marketCap
+
     data['negativeGraph'].append(
         {
             "timescale": "24h",
@@ -309,6 +334,10 @@ def get_crypto_overall():
 
     negativeMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[:10], 'monthsentiment')
     positiveMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[-10:], 'monthsentiment')
+
+    marketCap = calculate_market_cap(data['table'])
+
+    data['marketCap'] = marketCap
 
     data['negativeGraph'].append(
         {
@@ -375,6 +404,10 @@ def get_crypto_news():
     negativeMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[:10], 'monthsentiment')
     positiveMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[-10:], 'monthsentiment')
 
+    marketCap = calculate_market_cap(data['table'])
+
+    data['marketCap'] = marketCap
+
     data['negativeGraph'].append(
         {
             "timescale": "24h",
@@ -440,6 +473,10 @@ def get_crypto_reddit():
     negativeMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[:10], 'monthsentiment')
     positiveMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[-10:], 'monthsentiment')
 
+    marketCap = calculate_market_cap(data['table'])
+
+    data['marketCap'] = marketCap
+
     data['negativeGraph'].append(
         {
             "timescale": "24h",
@@ -504,6 +541,10 @@ def get_crypto_twitter():
 
     negativeMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[:10], 'monthsentiment')
     positiveMonth = parse_data(sorted(data['table'], key=sort_by_monthsentiment)[-10:], 'monthsentiment')
+
+    marketCap = calculate_market_cap(data['table'])
+
+    data['marketCap'] = marketCap
 
     data['negativeGraph'].append(
         {

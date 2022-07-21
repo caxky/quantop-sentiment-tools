@@ -10,6 +10,7 @@ export default function Table(props) {
       <Column field="id" header="ID" sortable/>
       <Column field="company" header={companyHeader} sortable/>
       <Column field="price" header="Price" sortable/>
+      <Column field="marketcap" header="Market Cap" sortable/>
       <Column field="dayprice" header="24h Price" sortable/>
       <Column field="weekprice" header="7d Price" sortable/>
       <Column field="monthprice" header="30d Price" sortable/>

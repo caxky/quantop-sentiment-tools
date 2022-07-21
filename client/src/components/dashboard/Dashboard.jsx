@@ -26,7 +26,8 @@ export default function Dashboard(props) {
       setDashboardData(({
         table: res.table,
         positiveGraph : res.positiveGraph,
-        negativeGraph : res.negativeGraph
+        negativeGraph : res.negativeGraph,
+        marketCap : res.marketCap,
       }))
       setLoading(false)
     }).catch((error) => {
@@ -90,6 +91,7 @@ export default function Dashboard(props) {
           <Col>
             <Card variant="outlined">
               <CardContent>
+                <h3>Total market cap: ${dashboardData.marketCap/1000}B</h3>
                 <Table 
                   header={tableHeader}
                   data={dashboardData.table}
