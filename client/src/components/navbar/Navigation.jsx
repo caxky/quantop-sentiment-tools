@@ -1,9 +1,13 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './Navigation.scss';
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { IconButton } from '@mui/material';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HomeIcon from '@mui/icons-material/Home';
@@ -87,11 +91,14 @@ export default function Navigation() {
             {t('Contact')}
           </Nav.Link>
         </Nav>
-
-        <select className='language-select' onChange={handleLangChange} value={language}>
-          <option value="en">EN</option>
-          <option value="fr">FR</option>
-        </select>
+        
+        <FormControl variant="standard" size="small">
+          <Select className='language-select' onChange={handleLangChange} label="Language" value={language} displayEmpty>
+            <InputLabel sx={{mx:1}}>Language</InputLabel>
+            <MenuItem value="en">EN</MenuItem>
+            <MenuItem value="fr">FR</MenuItem>
+          </Select>
+        </FormControl>
       </Navbar>
       <div className={`navbar-button${isMenuOpen === true ? ' open' : ''}`}>
         <IconButton type="button" className="button small" onClick={toggleMenu}>
